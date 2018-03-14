@@ -19,7 +19,7 @@ npm install --save vue-clear-swiper
 
 <template>
   <div id="app">
-    <vue-clear-swiper :clearOption="clearOption">
+    <vue-clear-swiper :clearOption="clearOption" @onChangeIndex="onChangeIndex">
       <div>swiper-1</div>
       <div>swiper-2</div>
       <div>swiper-3</div>
@@ -42,7 +42,12 @@ export default {
       }
     }
   },
-  components: { vueClearSwiper }
+  components: { vueClearSwiper },
+  methods: {
+    onChangeIndex (index) {
+      // get index
+    }
+  },
 }
 </script>
 
