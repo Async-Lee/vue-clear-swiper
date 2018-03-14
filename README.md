@@ -1,30 +1,49 @@
 # vue-clear-swiper
 
-> A Vue.js project
+> a niubilisity plugin !
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+Oh My God!
+This is an excellent component!
+The vue family is another tyrant component, the 2018-3-14 net starter, may be the lightest vue carousel component of the whole network.
 
-# serve with hot reload at localhost:8080
-npm run dev
+If you think OK, you can order a little star,think you!
 
-# build for production with minification
-npm run build
+Business cooperation please consult:
+  WX: Lee19951208
+  QQ: 1156553634
 
-# build for production and view the bundle analyzer report
-npm run build --report
+npm install --save vue-clear-swiper
 
-# run unit tests
-npm run unit
+<template>
+  <div id="app">
+    <vue-clear-swiper :clearOption="clearOption">
+      <div>swiper-1</div>
+      <div>swiper-2</div>
+      <div>swiper-3</div>
+    </vue-clear-swiper>
+  </div>
+</template>
 
-# run e2e tests
-npm run e2e
+<script>
+import vueClearSwiper from 'vue-clear-swiper'
+export default {
+  name: 'App',
+  data () {
+    return {
+      clearOption: {
+        direction: 'horizontal', // 'horizontal' or 'vertical', default: 'horizontal'
+        pagination: true, // 'true' or 'false', default: 'false'
+        loop: false, // 'true' or 'false', default: 'false'
+        auto: false, // 'true' or 'false', default: 'false'
+        autoTime: 2000 // 'true' or 'false', default: 2000
+      }
+    }
+  },
+  components: { vueClearSwiper }
+}
+</script>
 
-# run all tests
-npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
